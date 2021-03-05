@@ -37,17 +37,17 @@ try:
 except IOError:
     README = ''
 
-from et_xmlfile import (
-    __author__,
-    __license__,
-    __author_email__,
-    __url__,
-    __version__
-)
+# constants
+__version__ = '1.0.2'
 
+__author__ = 'See ATUHORS.txt'
+__license__ = 'MIT'
+__author_email__ = 'charlie.clark@clark-consulting.eu'
+__url__ = 'https://github.com/compyman/et_xmlfile'
 
-setup(name='et_xmlfile',
-    packages=find_packages(),
+setup(name='et_xmlfile_2021',
+    packages
+=find_packages(),
     # metadata
     version=__version__,
     description="An implementation of lxml.xmlfile for the standard library",
@@ -56,9 +56,7 @@ setup(name='et_xmlfile',
     author_email=__author_email__,
     url=__url__,
     license=__license__,
-    requires=[
-        'python (>=2.6.0)',
-        ],
+    python_requires=">=2.6, !=3.2",
     classifiers=[
                  'Development Status :: 5 - Production/Stable',
                  'Operating System :: MacOS :: MacOS X',
